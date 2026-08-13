@@ -1,0 +1,145 @@
+[bar]
+scale = 0.949999988079071
+inset-edge = 0.800000011920929
+inset-ends = 0.8500000238418579
+padding = 0.0
+padding-ends = 0.6000000238418579
+module-gap = 0.8999999761581421
+bg = "bg-base"
+background-opacity = 0
+border-width = 2
+border-color = "fg-default"
+rounding = "lg"
+button-variant = "icon-square"
+button-bg-opacity = 0
+button-icon-padding = 1.25
+button-label-size = 0.949999988079071
+button-label-padding = 1.2000000476837158
+button-gap = 1.600000023841858
+button-group-border-location = "all"
+button-group-border-width = 2
+button-group-padding = 0.75
+button-group-module-gap = 0.3499999940395355
+button-group-background = "#150733"
+button-group-opacity = 59
+button-group-border-color = "fg-default"
+button-group-rounding = "md"
+dropdown-opacity = 93
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    { name = "System", modules = [
+    "dashboard",
+    "hyprland-workspaces",
+] },
+    "separator",
+    { name = "Utilization", modules = [
+    "cpu",
+    "ram",
+    "storage",
+] },
+    "separator",
+    { name = "group", modules = ["media"] },
+]
+right = [
+    { name = "Sound", modules = [
+    "bluetooth",
+    "volume",
+    "microphone",
+    "network",
+] },
+    "separator",
+    { name = "Clock", modules = [
+    "notifications",
+    "clock",
+] },
+]
+
+[[bar.layout.center]]
+name = "General"
+modules = ["window-title"]
+
+[styling]
+rounding = "md"
+
+[styling.palette]
+surface = "#2f116e"
+elevated = "#000000"
+fg-muted = "#bac2de"
+primary = "#b4befe"
+red = "#f38ba8"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+blue = "#74c7ec"
+
+[modules.bluetooth]
+icon-color = "bg-base"
+icon-bg-color = "#39539f"
+label-color = "#ffffff"
+label-max-length = 16
+button-bg-color = "#39539f"
+
+[modules.clock]
+icon-color = "bg-elevated"
+icon-bg-color = "#29d9ab"
+label-color = "#ffffff"
+dropdown-show-seconds = true
+
+[modules.cpu]
+icon-color = "bg-elevated"
+
+[modules.dashboard]
+icon-color = "#ffffff"
+icon-bg-color = "#b9508d"
+
+[modules.hyprland-workspaces]
+min-workspace-count = 1
+numbering = "relative"
+app-icons-show = true
+active-indicator = "underline"
+active-color = "#cf59a2"
+occupied-color = "bg-surface-elevated"
+
+[modules.media]
+border-color = "fg-default"
+icon-color = "bg-elevated"
+icon-bg-color = "fg-default"
+label-color = "fg-default"
+
+[modules.microphone]
+icon-color = "bg-elevated"
+icon-bg-color = "#9f4d4d"
+label-color = "#ffffff"
+
+[modules.network]
+icon-color = "#000000"
+icon-bg-color = "#dc8add"
+label-color = "#ffffff"
+
+[modules.notifications]
+icon-color = "bg-elevated"
+icon-bg-color = "#26a269"
+label-color = "#ffffff"
+
+[modules.ram]
+icon-color = "bg-elevated"
+
+[modules.storage]
+icon-color = "bg-elevated"
+icon-bg-color = "#f57600"
+label-color = "#f57600"
+
+[modules.volume]
+border-color = "transparent"
+icon-color = "bg-elevated"
+icon-bg-color = "#f6d32d"
+label-color = "#ffffff"
+
+[modules.window-title]
+icon-color = "bg-elevated"
+label-color = "fg-default"
+
+[wallpaper]
+engine-enabled = false
