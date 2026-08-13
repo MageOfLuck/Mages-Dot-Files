@@ -3,6 +3,7 @@ set -e
 
 echo "Installing packages..."
 sudo pacman -S --needed - < packages.txt
+yay -S -- needed - < aurpacks.txt
 
 echo "Stowing dotfiles..."
 cd "$(dirname "$0")"
