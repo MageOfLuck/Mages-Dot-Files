@@ -10,10 +10,10 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("nm-applet")
   hl.exec_cmd("blueman-applet")
   hl.exec_cmd("easyeffects")
-  hl.exec_cmd("dunst")
   hl.exec_cmd("wayle shell")
   hl.exec_cmd("wl-paste --watch cliphist store")
   hl.exec_cmd("hypridle")
+  hl.exec_cmd("vicinae server")
 end)
 
 -------------------------------
@@ -24,6 +24,7 @@ end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("XDG_MENU_PREFIX", "plasma-")
 hl.env("XDG_DATA_DIRS", "/usr/share:/usr/local/share:$XDG_DATA_DIRS")
 hl.env("GBM_BACKEND", "nvidia-drm")
 hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
@@ -35,6 +36,7 @@ hl.env("__VK_LAYER_NV_optimus", "NVIDIA_only")
 hl.env("MOZ_DISABLE_RDD_SANDBOX", "1")
 hl.env("NVD_BACKEND", "direct")
 hl.env("XDG_DATA_DIRS", os.getenv("HOME") .. "/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share")
+hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 
 -----------------------
 ----- PERMISSIONS -----

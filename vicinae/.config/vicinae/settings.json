@@ -33,6 +33,7 @@
       }
    },
    "favorites": [
+      "applications:com.wayle.settings",
       "applications:proton.vpn.app.gtk",
       "applications:com.obsproject.Studio",
       "applications:org.DolphinEmu.dolphin-emu",

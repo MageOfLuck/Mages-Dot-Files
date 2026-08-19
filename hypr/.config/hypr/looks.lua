@@ -20,7 +20,7 @@ hl.layer_rule({
 hl.config({
     general = {
         gaps_in  = 5,
-        gaps_out = 20,
+        gaps_out = { top = 3, right = 10, bottom = 10, left = 10 },
 
         border_size = 2,
 
