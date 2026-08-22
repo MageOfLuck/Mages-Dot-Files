@@ -1,7 +1,0 @@
-stow
-hyprland
-hyprpaper
-hypridle
-hyprlock
-wezterm
-git

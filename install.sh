@@ -2,7 +2,7 @@
 set -e
 
 echo "Installing packages..."
-sudo pacman -S --needed - < packages.txt
+sudo pacman -S --needed - < pkglist.txt
 yay -S -- needed - < aurpacks.txt
 
 echo "Stowing dotfiles..."
