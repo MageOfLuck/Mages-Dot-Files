@@ -1,11 +1,7 @@
 #!/usr/bin/env bash
 #
-# setup-zsh.sh
-# Switches the default shell from bash to zsh on CachyOS (Arch-based),
-# and sets up a few useful extras: autosuggestions, syntax highlighting,
-# starship prompt, and optional dotfiles bootstrap via GNU Stow.
-#
-# Usage: ./setup-zsh.sh
+# setup.sh
+# Usage: ./setup.sh
 # Re-run safe: skips steps that are already done.
 
 set -euo pipefail
