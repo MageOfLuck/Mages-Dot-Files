@@ -3,21 +3,21 @@
 ------------------
 
 hl.monitor({
-    output   = "DP-3",
-    mode     = "2560x1440@180",
+    output   = "DP-1",
+    mode     = "2560x1440@179.98",
     position = "0x0",
     scale    = "1",
-    vrr      = 2,
+    vrr      =  2,
     bitdepth = 10,
 })
 hl.monitor({
-    output   = "HDMI-A-2",
+    output   = "HDMI-A-1",
     mode     = "1920x1080@60",
     position = "-1920x180",
     scale    = "1",
 })
 hl.monitor({
-    output   = "DP-5",
+    output   = "DP-3",
     mode     = "1920x1080@60",
     position = "2560x180",
     scale    = "1",

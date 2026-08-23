@@ -14,6 +14,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("wl-paste --watch cliphist store")
   hl.exec_cmd("hypridle")
   hl.exec_cmd("vicinae server")
+  hl.exec_cmd("hyprctl setcursor DJ-FOX-C 12")
 end)
 
 -------------------------------
@@ -22,8 +23,10 @@ end)
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("XCURSOR_THEME", "DJ-FOX-C")
+hl.env("XCURSOR_SIZE", "12")
+hl.env("HYPRCURSOR_THEME", "DJ-FOX-C")
+hl.env("HYPRCURSOR_SIZE", "12")
 hl.env("XDG_MENU_PREFIX", "plasma-")
 hl.env("XDG_DATA_DIRS", "/usr/share:/usr/local/share:$XDG_DATA_DIRS")
 hl.env("GBM_BACKEND", "nvidia-drm")

@@ -1,6 +1,6 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder and wezterm.config_builder() or {}
-config.enable_wayland = false
+config.enable_wayland = true
 -- Font
 config.font = wezterm.font_with_fallback {
   'JetBrains Mono',

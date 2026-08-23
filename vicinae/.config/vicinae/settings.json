@@ -33,6 +33,8 @@
       }
    },
    "favorites": [
+      "applications:github-desktop",
+      "applications:bitwarden",
       "applications:com.wayle.settings",
       "applications:proton.vpn.app.gtk",
       "applications:com.obsproject.Studio",
