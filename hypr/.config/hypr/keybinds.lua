@@ -13,6 +13,7 @@ hl.bind(secMod .. " + V", hl.dsp.exec_cmd("vscodium"))
 hl.bind(secMod .. " + B", hl.dsp.exec_cmd("librewolf"))
 hl.bind(secMod .. " + D", hl.dsp.exec_cmd("discord"))
 hl.bind(secMod .. " + S", hl.dsp.exec_cmd("steam"))
+hl.bind(secMod .. " + E", hl.dsp.exec_cmd("easyeffects"))
 
 --brightness
 hl.bind("F5", hl.dsp.exec_cmd("~/.config/waybar/scripts/brightness.sh 3 down"))

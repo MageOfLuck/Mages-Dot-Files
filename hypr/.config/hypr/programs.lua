@@ -23,6 +23,7 @@ end)
 
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
 
+hl.env("JAVA_HOME", "~/jdk-26.0.2.1")
 hl.env("XCURSOR_THEME", "DJ-FOX-C")
 hl.env("XCURSOR_SIZE", "12")
 hl.env("HYPRCURSOR_THEME", "DJ-FOX-C")
@@ -40,6 +41,8 @@ hl.env("MOZ_DISABLE_RDD_SANDBOX", "1")
 hl.env("NVD_BACKEND", "direct")
 hl.env("XDG_DATA_DIRS", os.getenv("HOME") .. "/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
+hl.env("__GL_GSYNC_ALLOWED", "true")
+hl.env("GTK_THEME", "Dracula")
 
 -----------------------
 ----- PERMISSIONS -----
