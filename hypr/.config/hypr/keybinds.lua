@@ -46,10 +46,12 @@ hl.bind(mainMod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mainMod .. " + up",    hl.dsp.focus({ direction = "up" }))
 hl.bind(mainMod .. " + down",  hl.dsp.focus({ direction = "down" }))
 
---script for moving all desktops to new section
-for i = 1, 3 do
-    hl.bind(secMod .. " + " .. i,         hl.dsp.exec_cmd("~/.config/hypr/scripts/workspace-group.sh " .. i))
-    hl.bind(mainMod .. " + " .. i, hl.dsp.exec_cmd("~/.config/hypr/scripts/workspace-group-move.sh " .. i))
+-- Switch workspaces with mainMod + [0-9]
+-- Move active window to a workspace with mainMod + SHIFT + [0-9]
+for i = 1, 10 do
+    local key = i % 10 -- 10 maps to key 0
+    hl.bind(secMod .. " + " .. key,             hl.dsp.focus({ workspace = i}))
+    hl.bind(mainMod .. " + " .. key,     hl.dsp.window.move({ workspace = i }))
 end
 
 -- Example special workspace (scratchpad)
@@ -67,9 +69,10 @@ hl.bind(thirdMod .. " + " .. secMod .. " + up",    hl.dsp.window.move({ monitor 
 hl.bind(thirdMod .. " + " .. secMod .. " + down",  hl.dsp.window.move({ monitor = "d" }))
 
 
+
 -- Move/resize windows with mainMod + LMB/RMB and dragging
---hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
---hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
+hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Side-button drag/resize (conflicts with Rivals abilities — gated behind gaming submap)
 hl.bind("mouse:275", hl.dsp.window.drag(),   { mouse = true })
