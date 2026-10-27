@@ -9,11 +9,12 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("hyprpaper & librewolf")
   hl.exec_cmd("nm-applet")
   hl.exec_cmd("blueman-applet")
-  hl.exec_cmd("easyeffects")
   hl.exec_cmd("wayle shell")
   hl.exec_cmd("wl-paste --watch cliphist store")
   hl.exec_cmd("hypridle")
   hl.exec_cmd("vicinae server")
+  hl.exec_cmd("hyprctl setcursor DJ-FOX-C 12")
+  hl.exec_cmd("systemctl --user start hyprpolkitagent")
 end)
 
 -------------------------------

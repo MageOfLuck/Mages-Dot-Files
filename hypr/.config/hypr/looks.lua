@@ -20,12 +20,12 @@ hl.layer_rule({
 hl.config({
     general = {
         gaps_in  = 5,
-        gaps_out = { top = 3, right = 10, bottom = 10, left = 10 },
+        gaps_out = { top = 5, right = 5, bottom = 5, left = 5 },
 
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"#3602C2", "#3602C2"}, angle = 45 },
+            active_border   = { colors = {"#FFFFFF", "#3602C2"}, angle = 45 },
             inactive_border = "#000000",
         },
 
@@ -44,17 +44,17 @@ hl.config({
 
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
-        inactive_opacity = 0.80,
+        inactive_opacity = 1.0,
 
         shadow = {
-            enabled      = true,
+            enabled      = false,
             range        = 4,
             render_power = 3,
             color        = 0xee1a1a1a,
         },
 
         blur = {
-            enabled   = true,
+            enabled   = false,
             size      = 4,
             passes    = 1,
             vibrancy  = 0.1696,

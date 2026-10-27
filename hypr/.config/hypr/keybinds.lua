@@ -36,8 +36,8 @@ hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("vicinae toggle"), { description = "Toggle Vicinae launcher" })
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind("SHIFT + Print", hl.dsp.exec_cmd("grim ~/Pictures/screenshot_$(date +%Y%m%d_%H%M%S).png"))
-hl.bind("Print", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | swappy -f -"))
+--hl.bind("CTRL + SHIFT + P", hl.dsp.exec_cmd("grim ~/Pictures/screenshot_$(date +%Y%m%d_%H%M%S).png"))
+hl.bind(secMod .. " + P", hl.dsp.exec_cmd("grim -g \"$(slurp)\" - | swappy -f -"))
 
 
 -- Move focus with mainMod + arrow keys
